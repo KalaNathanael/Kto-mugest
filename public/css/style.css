@@ -37,6 +37,12 @@
       background-repeat: no-repeat; border-radius: 5%;
 }
 
+.small-card{
+    flex: 0 0 55%;
+    margin-right: 2rem;
+    height: 70vh !important;
+}
+
 .side-board{
     background-image: url(../img/bord-gauche.png);
      background-size: cover;
@@ -44,8 +50,7 @@
 }
 
 .overflow-scroll{
-    overflow-y: scroll;
-    height: 70vh;
+    overflow-y: auto;
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
 }
@@ -65,7 +70,7 @@
 }
 
 .overlay-fit{
-    max-width: 93% !important;
+    max-width: 100% !important;
     max-height: 83% !important;
     min-width: 90% !important;
 }
@@ -677,7 +682,7 @@ html { height: 100%;}
 /* actualiser un membre */
 
 .block{
-    height: 85vh !important;
+    height: 85vh;
 }
 
 .vh-long-bg{

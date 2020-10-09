@@ -9,7 +9,7 @@ class NavBar extends React.Component {
                     <ul className="nav sidebar-nav">
                         <div className="sidebar-header">
                             <div className="sidebar-brand pt-2">
-                                <h4 className="text-white h5 text-left"><img src={require("../../assets/img/Logo-UCAC-1.png")} alt="" className="logo" />  KTO-Mugest </h4>
+                                <h4 className="text-white h5 text-left"><img src={require("../assets/img/Logo-UCAC-1.png")} alt="" className="logo" />  KTO-Mugest </h4>
                             </div>
                         </div>
                         <li className="dropdown">
