@@ -1,0 +1,28 @@
+.form-control-user {
+    border-radius: 0.3rem !important;
+    border-color: #F23E44;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+  .form-control-user:focus {
+      border-color: #fff;
+  }
+
+.form-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.btn-style {
+    background-color: #70AD47;
+    border-color: #70AD47;
+    transition: all 0.3s;
+}
+  .btn-style:hover {
+    background-color: #90e159;
+    border-color: #90e159;
+
+  }

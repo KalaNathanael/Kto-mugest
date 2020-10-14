@@ -54,6 +54,31 @@
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
 }
+
+.overflow-hidden {
+    overflow-y: hidden;
+}
+
+.table-scroll-container {
+    overflow-y : auto;
+    height:100vh;
+}
+
+/* .table-scroll-small-height {
+    height: 50vh;
+}
+
+.table-scroll-high-height {
+    height: 100vh;
+} */
+
+.container-padding {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+
+
 .min-w-80{
     min-width: 80% !important;
 }
@@ -71,7 +96,7 @@
 
 .overlay-fit{
     max-width: 100% !important;
-    max-height: 83% !important;
+    max-height: 100% !important;
     min-width: 90% !important;
 }
 
@@ -682,7 +707,8 @@ html { height: 100%;}
 /* actualiser un membre */
 
 .block{
-    height: 85vh;
+    min-height: 63vh;
+    max-height: 80vh;
 }
 
 .vh-long-bg{

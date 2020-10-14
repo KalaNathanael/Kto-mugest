@@ -12,8 +12,10 @@ class DetailUtilisateur extends React.Component {
             <PageWrapper>
                 <InfoUser />
                 <ContentCard cardColor="green" specialClass="small-card">
-                    <h1 className="text-white text-center titre-card mt-5 mb-2rem">Etat des Finances</h1>
-                    <TableauFinance type="user" />
+                    <h1 className="text-white text-center titre-card mt-4 mb-2rem">Etat des Finances</h1>
+                    <div className="table-scroll-container">
+                        <TableauFinance type="user" />
+                    </div>
                 </ContentCard>
             </PageWrapper>
         );

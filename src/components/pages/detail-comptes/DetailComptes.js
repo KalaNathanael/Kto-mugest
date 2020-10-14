@@ -12,7 +12,9 @@ class DetailComptes extends React.Component {
             <PageWrapper>
                 <SideTitle titre="Etat des autres Comptes" />
                 <ContentCard cardColor="green" specialClass="mr-5" >
-                    <TableauFinance type="all" />
+                    <div className="table-scroll-container">
+                        <TableauFinance type="all" />
+                    </div>
                 </ContentCard>
             </PageWrapper>
         );
