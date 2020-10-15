@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
 
@@ -13,26 +14,26 @@ class NavBar extends React.Component {
                             </div>
                         </div>
                         <li className="dropdown">
-                            <a href="#consulter" className="dropdown-toggle my-3"  data-toggle="dropdown">Consulter <span className="caret"></span></a>
+                            <Link to="" className="dropdown-toggle my-3"  data-toggle="dropdown">Consulter <span className="caret"></span></Link>
                             <ul className="dropdown-menu animated fadeInLeft" role="menu">
-                                <li><a href="#situation" id="situation">Sa situation</a></li>
-                                <li><a href="#videos" id="assistances">Les assistances sociales</a></li>
-                                <li><a href="#">Consulter état des autres comptes</a></li>                
+                                <li><Link to="/consulter/sa-situation" id="situation">Sa situation</Link></li>
+                                <li><Link to="#videos" id="assistances">Les assistances sociales</Link></li>
+                                <li><Link to="/consulter/etat-autres-comptes">Consulter état des autres comptes</Link></li>                
                             </ul>
                         </li>
                         <li className="dropdown">
-                            <a href="#envoyer" className="dropdown-toggle my-3"  data-toggle="dropdown">Envoyer <span className="caret"></span></a>
+                            <Link to="" className="dropdown-toggle my-3"  data-toggle="dropdown">Envoyer <span className="caret"></span></Link>
                             <ul className="dropdown-menu animated fadeInLeft" role="menu">
-                                <li><a href="#pictures" id="sms-bureau"><i className="fa fa-envelope-o"></i>  SMS au bureau</a></li>
-                                <li><a href="#videos" id="sms-membre"><i className="fa fa-envelope-o"></i>  SMS à un Membre</a></li>
+                                <li><Link to="#pictures" id="sms-bureau"><i className="fa fa-envelope-o"></i>  SMS au bureau</Link></li>
+                                <li><Link to="#videos" id="sms-membre"><i className="fa fa-envelope-o"></i>  SMS à un Membre</Link></li>
                             </ul>
                         </li>
                         <li className="dropdown">
-                            <a href="#enregistrer" className="dropdown-toggle my-3"  data-toggle="dropdown">Enregistrer <span className="caret"></span></a>
+                            <Link to="" className="dropdown-toggle my-3"  data-toggle="dropdown">Enregistrer <span className="caret"></span></Link>
                             <ul className="dropdown-menu animated fadeInLeft" role="menu">
-                                <li><a href="#videos" id="membre">Un Membre</a></li>
-                                <li><a href="#books" id="depense">Une Dépense</a></li>
-                                <li><a href="#books" id="cotisation">Une Cotisation</a></li>
+                                <li><Link to="/enregistrer/membre" id="membre">Un Membre</Link></li>
+                                <li><Link to="#books" id="depense">Une Dépense</Link></li>
+                                <li><Link to="#books" id="cotisation">Une Cotisation</Link></li>
                             </ul>
                         </li>
                     </ul>

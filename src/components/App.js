@@ -4,16 +4,27 @@ import NavBar from './NavBar';
 import EnregistrerUser from './pages/enregistrer-utilisateur/EnregistrerUser';
 import DetailUtilisateur from './pages/detail-utilisateur/DetailUtilisateur';
 import DetailComptes from './pages/detail-comptes/DetailComptes';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, Redirect,  Switch } from 'react-router-dom';
 
 const App = () => {
     return (
         <div id="wrapper" className="vh-100 vw-100 background-1">
-            {/* <Connexion /> */}
             <NavBar />
-            {/* <DetailUtilisateur /> */}
-            <EnregistrerUser />
-            {/* <DetailComptes /> */}
+            <Switch>
+                <Route path="/consulter/sa-situation">
+                    <DetailUtilisateur />
+                </Route>
+                <Route path="/consulter/etat-autres-comptes" >
+                    <DetailComptes />
+                </Route>
+                <Route path="/enregistrer/membre" >
+                    <EnregistrerUser />
+                </Route>
+                <Route path="/">
+                    <Redirect to="/consulter/etat-autres-comptes" />
+                </Route>
+                <Route component={DetailUtilisateur} />
+            </Switch>
         </div>
         
     );
