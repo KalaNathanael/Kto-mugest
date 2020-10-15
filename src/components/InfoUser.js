@@ -21,7 +21,7 @@ class InfoUser extends React.Component {
                         </div>
                         
                     </div>
-                    <a href="#" className="link">Telecharger RI <br/> version PDF</a>
+                    <a href="/" className="link">Telecharger RI version  PDF</a>
                 </div>
             </div>
         );

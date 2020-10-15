@@ -395,7 +395,7 @@ class TableauFinance extends React.Component {
 
     render(){
         return (
-            <table className={`table table-hover table-striped table-bordered  ${this.props.type!=="user" ? "table-responsive mb-0" : "" } overlay-fit`}>
+            <table className={`table table-hover table-striped table-bordered  ${this.props.type!=="user" ? "table-responsive mb-0" : "" } table-height mb-0`}>
                 { this.renderTableHead(this.props.type) }
                 { this.renderTableData(this.props.type) }
             </table>
